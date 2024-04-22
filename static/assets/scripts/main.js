@@ -1,9 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-  // Ads
-  if (localStorage.getItem('ad') === null || localStorage.getItem('ad') === 'default') {
-    localStorage.setItem('ad', 'on')
-  }
-
+  
   var advDiv = document.getElementById('adv')
   if (advDiv && localStorage.getItem('ad') === 'on') {
     var script = document.createElement('script')
